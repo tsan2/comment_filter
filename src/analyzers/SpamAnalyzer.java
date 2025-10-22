@@ -11,12 +11,12 @@ public class SpamAnalyzer extends KeywordAnalyzer {
     }
 
     @Override
-    public Label getLabel() {
+    protected Label getLabel() {
         return Label.SPAM;
     }
 
     @Override
-    public String[] getKeywords() {
+    protected String[] getKeywords() {
         return keywords.clone();
     }
 }

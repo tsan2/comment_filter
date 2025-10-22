@@ -11,12 +11,12 @@ public class NegativeTextAnalyzer extends KeywordAnalyzer {
     }
 
     @Override
-    public Label getLabel() {
+    protected Label getLabel() {
         return Label.NEGATIVE_TEXT;
     }
 
     @Override
-    public String[] getKeywords() {
+    protected String[] getKeywords() {
         return keywords.clone();
     }
 }

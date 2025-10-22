@@ -4,8 +4,8 @@ import enums.Label;
 
 public abstract class KeywordAnalyzer implements TextAnalyzer {
 
-    public abstract Label getLabel();
-    public abstract String[] getKeywords();
+    protected abstract Label getLabel();
+    protected abstract String[] getKeywords();
 
     @Override
     public Label processText(String text) {
