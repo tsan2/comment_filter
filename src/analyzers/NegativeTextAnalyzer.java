@@ -6,8 +6,8 @@ public class NegativeTextAnalyzer extends KeywordAnalyzer {
 
     private final String[] keywords;
 
-    public NegativeTextAnalyzer(String[] keywords){
-        this.keywords = keywords.clone();
+    public NegativeTextAnalyzer(){
+        this.keywords = new String[] {":(", "=(", ":|"};
     }
 
     @Override

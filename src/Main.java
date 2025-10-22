@@ -10,7 +10,7 @@ public class Main{
     public static void main(String[] args){
         TooLongAnalyzer longAnalyzer = new TooLongAnalyzer(40);
         SpamAnalyzer spamAnalyzer = new SpamAnalyzer(new String[] {"покупайте", "подписывайтесь", "купи", "подписка"});
-        NegativeTextAnalyzer negativeTextAnalyzer = new NegativeTextAnalyzer(new String[] {"плохой", "отписка", "скатился", "фу"});
+        NegativeTextAnalyzer negativeTextAnalyzer = new NegativeTextAnalyzer();
         //добавить чтобы слова спама и негативных сообщений откуда то выкачивались
         //можно потом или докрутить или переиспользовать чтобы было ближе к фильтру комментариев
 
